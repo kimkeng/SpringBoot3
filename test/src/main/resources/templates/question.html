@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/html5div.js" ></script>
+  <script src="js/html5shiv.js" ></script>
+  <script src="js/rollover.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+  <!-- ###헤더### -->
+  <header >
+    <div id="header">
+      <h1><span>롯데 콘서트홀</span></h1>
+      <div id="mainLogo">
+        <a href="index.html" class="showBalloon" title="메인로고"><img src="images/img_logo01.png" alt="롯데 메인 로고"/></a>
+      </div>
+      <div id="topH">
+        <div class="topHBox1 ">
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/" class="youtube showBalloon rollover" title="브랜드스토리"><img src="images/br_off.png" alt=""/></a>
+            </li>
+            <li>
+              <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0" class="blog showBalloon rollover" title="페이스북"><img src="images/fb_off.png" alt=""/></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" class="instar showBalloon rollover" title="유튜브"><img src="images/ut_off.png" alt=""/></a>
+            </li>
+            <li>
+              <a href="sub1_Login/sub1Login.html" class="brand showBalloon rollover" title="인스타그램"><img src="images/in_off.png" alt=""/></a>
+            </li>
+          </ul>
+        </div>
+        <div class="topHBox3">
+          <img src="images/ico_search.png" alt="검색"/>
+          <a href="#" class="showBalloon" title="검색">검색</a>
+        </div>
+        <div class="topHBox2">
+          <ul>
+            <li><a href="sub1_Login/sub1Login.html" class="showBalloon" title="롯데월드타워">롯데월드타워</a></li>
+            <li><a href="sub3_FreeBoard/freeBoard.html" class="topHLine showBalloon" title="롯데뮤지엄">롯데뮤지엄</a></li>
+            <li><a href="sub1_Login/sub1Login.html" class="topHLine showBalloon" title="롯데문화제단">롯데문화제단</a></li>
+            <li><a href="sub2_QnA/qna.html" class="topHLine showBalloon" title="ENG">ENG</a></li>
+            <li><a href="sub3_FreeBoard/freeBoard.html" class="topHLine showBalloon" title="회원가입">회원가입</a></li>
+            <li><a href="sub1_Login/sub1Login.html" class="topHLine showBalloon" title="로그인">로그인</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--메뉴 만들기-->
+      <div id="botH">
+        <nav id="nav">
+          <ul class="menu">
+            <li class="menuH">
+              <a href="sub1_Login/sub1Login.html" class="menuBtn showBalloon" title="공연안내/예매1">공연안내/예매1</a>
+              <ul class="sub">
+                <li><a href="#" title="공연 예매" class="showBalloon">공연 예매</a></li>
+                <li><a href="#" title="예매 안내" class="showBalloon">예매 안내</a></li>
+                <li><a href="#" title="패키지 예매" class="showBalloon">패키지 예매</a></li>
+                <li><a href="#" title="예매 확인/취소" class="showBalloon">예매 확인/취소</a></li>
+                <li><a href="#" title="공연 관람 예절" class="showBalloon">공연 관람 예절</a></li>
+              </ul>
+            </li>
+            <li class="menuH">
+              <a href="sub2_QnA/qna.html" class="menuBtn showBalloon" title="롯데 콘서트홀">롯데 콘서트홀</a>
+              <ul class="sub">
+                <li ><a href="#" title="공연장 소개" class="showBalloon">공연장 소개</a></li>
+                <li>
+                  <a href="#" class="smallMenu showBalloon" title="음향"><span>음향</span></a>
+                  <a href="#" class="smallMenu showBalloon" title="객석"><span>객석</span></a>
+                  <a href="#" class="smallMenu showBalloon" title="무대시설"><span>무대시설</span></a>
+                </li>
+                <li><a href="#" title="예매 안내" class="showBalloon">예매 안내</a></li>
+                <li><a href="#" title="패키지 예매" class="showBalloon">패키지 예매</a></li>
+                <li><a href="#" title="예매 확인/취소" class="showBalloon">예매 확인/취소</a></li>
+                <li><a href="#" title="공연 관람 예절" class="showBalloon">공연 관람 예절</a></li>
+              </ul>
+            </li>
+            <li class="menuH">
+              <a href="sub3_FreeBoard/freeBoard.html" class="menuBtn" title="커뮤니티">이용안내</a>
+              <ul class="sub">
+                <li><a href="#" title="시설안내">시설안내</a></li>
+                <li ><a href="#" title="객석 안내" class="smallMenu"><span>객석 안내</span></a>
+                  <a href="#" title="편의시설 안내" class="smallMenu"><span>편의시설 안내</span></a>
+                  <a href="#" title="장애인 이용안내" class="smallMenu"><span>장애인 이용안내</span></a>
+                  <a href="#" title="비상대피 안내" class="smallMenu"><span>비상대피 안내</span></a></li>
+                <li><a href="#" title="오시는 길">오시는 길</a></li>
+                <li><a href="#" title="공연장 오시는길" class="smallMenu"><span>공연장 오시는길</span></a></li>
+              </ul>
+            </li>
+            <li class="menuH">
+              <a href="sub1_Login/sub1Login.html" class="menuBtn" title="대관안내/신청">대관안내/신청</a>
+              <ul class="sub">
+                <li><a href="#" title="대관절차안내">대관절차안내</a></li>
+                <li><a href="#" title="대관 사용료">대관 사용료</a></li>
+                <li><a href="#" title="대관 시설안내">대관 시설안내</a></li>
+                <li><a href="#" title="대관 규약">대관 규약</a></li>
+                <li><a href="#" title="BI사용 규격">BI사용 규격</a></li>
+                <li><a href="#" title="대관 공고">대관 공고</a></li>
+                <li><a href="#" title="대관 신청">대관 신청</a></li>
+              </ul>
+            </li>
+            <li class="menuH">
+              <a href="sub2_QnA/qna.html" class="menuBtn" title="대관안내/신청">대관안내/신청</a>
+              <ul class="sub">
+                <li><a href="#" title="대관절차안내">대관절차안내</a></li>
+                <li><a href="#" title="대관 사용료">대관 사용료</a></li>
+                <li><a href="#" title="대관 시설안내">대관 시설안내</a></li>
+                <li><a href="#" title="대관 규약">대관 규약</a></li>
+                <li><a href="#" title="BI사용 규격">BI사용 규격</a></li>
+                <li><a href="#" title="대관 공고">대관 공고</a></li>
+                <li><a href="#" title="대관 신청">대관 신청</a></li>
+              </ul>
+            </li>
+            <li class="menuH">
+              <a href="sub3_FreeBoard/freeBoard.html" class="menuBtn" title="마이페이지">마이페이지</a>
+              <ul class="sub">
+                <li><a href="#" title="예매확인/취소">예매확인/취소</a></li>
+                <li><a href="#" title="1:1문의 결과">1:1문의 결과</a></li>
+                <li><a href="#" title="쿠폰/예매권">쿠폰/예매권</a></li>
+                <li><a href="#" title="나의 관심공연">나의 관심공연</a></li>
+                <li><a href="#" title="회원정보변경">회원정보변경</a></li>
+                <li><a href="#" title="반야드회원가입">반야드회원가입</a></li>
+              </ul>
+            </li>
+
+          </ul>
+        </nav>
+      </div><!-- id="botH" -->
+    </div>
+  </header>
+  <!-- ###헤더끝###	-->
+
+  <!-- ###색션### -->
+  <section>
+    <div id="section">
+      <div id="topTopS">
+        <div class="topTop1">
+          <img src="images/sejong02.jpg" title="연극 겟팅아웃" class="showBalloon" alt="겟팅아웃"/>
+          <img src="images/sejong03.jpg" title="전통과 실험" class="showBalloon alt" alt="전통과 실험"/></a>
+          <img src="images/sejong04.jpg" title="세종 체임버" class="showBalloon alt" alt="세종 체임버"/>
+          <img src="images/sejong05.jpg" title="뮤지컬 모차르트" class="showBalloon alt" alt="뮤지컬 모차르트"/>
+          <img src="images/sejong06.jpg" title="몸으로 몸한다" class="showBalloon alt" alt="몸으로 몸한다"/>
+          <!-- <img src="images/sejong07.jpg" title="알로하, 나의 엄마들" class="showBalloon alt" alt="알로하, 나의 엄마들"/> 이미지 작음 -->
+          <img src="images/sejong08.jpg" title="코끼리들이 웃는다의" class="showBalloon alt" alt="코끼리들이 웃는다의"/>
+          <img src="images/sejong09.jpg" title="스니커즈 언박스드" class="showBalloon alt" alt="스니커즈 언박스드"/>
+          <img src="images/sejong01.jpg" title="싱크 넥스트 23" class="showBalloon alt" alt="싱크 넥스트 23"/>
+        </div>
+      </div>
+      <div id="topS">
+        <div id="leftTopS">
+          <div class="mainBox">
+            <a href="#" class="mainBanner showBalloon" title="비올라 고전을 만나다"><img src="images/yebien2.jpg" alt="메인 배너"/></a>
+            <a href="#" class="mainBanner showBalloon alt" title="비올라 고전을 만나다"><img src="images/yebien.jpg" alt="메인 배너"/></a>
+            <a href="#" class="mainBanner showBalloon alt" title="비올라 고전을 만나다"><img src="images/yebien3.jpg" alt="메인 배너"/></a>
+            <a href="#" class="mainBanner showBalloon alt" title="클래식 레볼루션"><img src="images/biglogo1.jpg" alt="클래식 레볼루션"/></a>
+            <a href="#" class="mainBanner showBalloon alt" title="한수진과 펠리카노"><img src="images/page7.jpg" alt="한수진과 펠리카노"/></a>
+            <!-- <a href="#" class="mainBanner showBalloon alt" title="로테르담 필하모닉"><img src="images/page8.jpg" alt="로테르담 필하모닉"/></a> 화질 구림 -->
+            <a href="#" class="mainBanner showBalloon alt" title="디아나 담라우"><img src="images/page4.jpg" alt="디아나 담라우"/></a>
+            <a href="#" class="mainBanner showBalloon alt" title="빈 베를린 쳄버"><img src="images/mainimg4.jpg" alt="빈 베를린 쳄버"/></a>
+            <a href="#" class="mainBanner showBalloon alt" title="루체른 심포니"><img src="images/page11.jpg" alt="루체른 심포니"/></a>
+          </div>
+          <div class="playBox">
+            <a href="#" class="play"><img src="images/btn_big_pause.png" alt=""/></a>
+          </div>
+          <div class="smallO">
+            <a href="#" class="firstO"><img src="images/bu_circle_off.png" alt=""/></a>
+            <a href="#" class="secondO"><img src="images/bu_circle_off.png" alt=""/></a>
+            <a href="#" class="thirdO"><img src="images/bu_circle_off.png" alt=""/></a>
+            <a href="#" class="fourthO"><img src="images/bu_circle_off.png" alt=""/></a>
+            <a href="#" class="fifthO"><img src="images/bu_circle_off.png" alt=""/></a>
+            <a href="#" class="sixthO"><img src="images/bu_circle_off.png" alt=""/></a>
+            <a href="#" class="seventhO"><img src="images/bu_circle_off.png" alt=""/></a>
+            <a href="#" class="eigthO"><img src="images/bu_circle_off.png" alt=""/></a>
+            <a href="#" class="ninthO"><img src="images/bu_circle_off.png" alt=""/></a>
+
+          </div>
+        </div><!-- id="leftTopS" -->
+        <div id="rightTopS">
+          <a href="#" id="searchBox" class="showBalloon"title="공연 전체 보기"><img src="images/btn_open_all_menu.png" alt="공연 전체 보기"/></a>
+          <div id="subTopS">
+
+            <div class="subTopBox1">
+              <a href="#" class="showBalloon" title="클래식 레볼루션"><img src="images/page10.jpg" alt="클래식 레볼루션"/></a>
+            </div>
+            <div class="subTopBox2">
+              <a href="#"class="showBalloon" title="한수진과 펠리카노"><img src="images/page7.jpg" alt="한수진과 펠리카노"/></a>
+            </div>
+            <div class="subTopBox3">
+              <a href="#" class="showBalloon" title="로테르담 필하모닉"><img src="images/page8.jpg" alt="로테르담 필하모닉"/></a>
+            </div>
+          </div>
+          <div id="subBotS">
+            <div class="subBotBox1 showBalloon" title="실시간 날씨">
+              <h1>실시간 서울 날씨</h1>
+              <h2></h2>
+              <div class="ctemp">현재 온도 : </div>
+
+              <div class="clowtemp">최저 온도 : </div>
+              <div class="chightemp">최고 온도 : </div>
+              <div class="cicon"></div>
+            </div>
+
+            <div class="subBotBox2">
+              <a href="#" class="showBalloon" title="빈 베를린 쳄버"><img src="images/mainimg4.jpg" alt="빈 베를린 쳄버"/></a>
+            </div>
+            <div class="subBotBox3">
+              <a href="#" class="showBalloon" title="루체른 심포니"><img src="images/page11.jpg" alt="루체른 심포니"/></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- id="topS" -->
+    </div>
+
+    <div id="null"></div>
+
+    <div id="midS">
+      <div id="leftMidS">
+        <div class="leftMBox">
+          <h3 class="showBalloon" title="공지사항">공지사항</h3>
+          <ul>
+            <li class="notice showBalloon" title="클래식 레볼루션 2023"><a href="#">[티켓오픈] 클래식 레볼루션 2023</a></li>
+            <li class="notice showBalloon" title="이용약관 개정 안내"><a href="#">[공지] 이용약관 개정안내</a></li>
+            <li class="notice showBalloon" title="라인업 안내"><a href="#">[2023년 롯데 콘서트홀 기획공연] 라인업 안내</a></li>
+            <li class="notice showBalloon" title="라인업 안내"><a href="#">[2023년 롯데 콘서트홀 기획공연] 라인업 안내</a></li>
+            <li class="notice showBalloon" title="라인업 안내"><a href="#">[2023년 롯데 콘서트홀 기획공연] 라인업 안내</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="rightMidS">
+        <div class="more showBalloon" title="더 보기"><a href="#" title="더보기">더 보기</a></div>
+        <div class="information showBalloon" title="인포메이션"><h3>INFORMATION</h3></div>
+        <div class="callBox">
+          <a href="#" class="showBalloon" title="예약문의"><img src="images/ico_main_infor04.png" alt="예매문의"/></a>
+          <ul class="callText">
+            <li class="firstCall">평일 10:30 ~ 19:00</li>
+            <li class="secondCall">(점심휴게시간 11:30 ~ 12:30)</li>
+          </ul>
+        </div>
+        <div class="comeBox">
+          <a href="#" class="showBalloon" title="오시는 길"><img src="images/ico_main_infor03.png" alt="오시는 길"/></a>
+          <ul class="comeText">
+            <li class="firstCome">롯데콘서트홀로 오는</li>
+            <li class="secondCome">대중교통편과 주차장</li>
+          </ul>
+        </div>
+        <div class="binBox">
+          <a href="#" class="showBalloon" title="빈야드 회원가입"><img src="images/ico_main_infor05.png" alt="빈야드 회원가입"/></a>
+          <ul class="binText">
+            <li class="firstBin">롯데콘서트홀만의</li>
+            <li class="secondBin">틀별한 멤버십 소개</li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- id="midS" -->
+    <div id="menuS">
+      <div id="leftMenuS">
+        <div class="yearBox showBalloon" title="날짜" ><a href="#">2023.05</a>
+          <a href="#"><img src="images/btn_m_cal_right.gif" alt=""/></a>
+        </div>
+      </div>
+      <div id="menuBar">
+        <ul class="menuNumber">
+          <li><a href="#">01 </a></li>
+          <li><a href="#">02 </a></li>
+          <li><a href="#">03 </a></li>
+          <li><a href="#">04 </a></li>
+          <li><a href="#">05 </a></li>
+          <li><a href="#">06 </a></li>
+          <li><a href="#" class="day">07</a></li>
+          <li><a href="#">08 </a></li>
+          <li><a href="#">09 </a></li>
+          <li><a href="#">10</a></li>
+          <li><a href="#">11</a></li>
+          <li><a href="#">12</a></li>
+          <li><a href="#">13</a></li>
+          <li><a href="#" class="day">14</a></li>
+
+          <li><a href="#">15</a></li>
+          <li><a href="#">16</a></li>
+          <li><a href="#">17</a></li>
+          <li><a href="#">18</a></li>
+          <li><a href="#">19</a></li>
+          <li><a href="#">20</a></li>
+          <li><a href="#" class="day">21</a></li>
+          <li><a href="#">22</a></li>
+          <li><a href="#">23</a></li>
+          <li><a href="#">24</a></li>
+          <li><a href="#">25</a></li>
+          <li><a href="#">26</a></li>
+          <li><a href="#">27</a></li>
+          <li><a href="#" class="day">28</a></li>
+          <li><a href="#">29</a></li>
+          <li><a href="#">30</a></li>
+          <li><a href="#">31</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="botS">
+      <h3>후원사</h3>
+      <div id="botSLine">
+        <a href="#"><div class="botSImg1 showBalloon" title="왼쪽으로 넘기기"><img src="images/btn_m_cal_left.gif" alt="왼쪽으로 넘기기"/></div></a>
+        <ul>
+          <li><a href="#" title="롯데 케미칼" class="lotte1 showBalloon"><img src="images/lotteGroup_logo01.png" alt="롯데 케미칼"/></a></li>
+          <li><a href="#" title="롯데 건설" class="lotte2 showBalloon"><img src="images/lotteGroup_logo03.png" alt="롯데 건설"/></a></li>
+          <li><a href="#" title="롯데 쇼핑" class="lotte3 showBalloon"><img src="images/lotteGroup_logo02.png" alt="롯데 쇼핑"/></a></li>
+          <li><a href="#" title="롯데 물산" class="lotte4 showBalloon"><img src="images/lotteGroup_logo06.png" alt="롯데 물산"/></a></li>
+          <li><a href="#" title="롯데 하이마트" class="lotte5 showBalloon"><img src="images/lotteGroup_logo08.png" alt="롯데 하이마트"/></a></li>
+          <li><a href="#" title="롯데 정밀화학" class="lotte6 showBalloon"><img src="images/lotteGroup_logo05.png" alt="롯데 정밀화학"/></a></li>
+        </ul>
+        <a href="#" class="showBalloon" title="오른쪽으로 넘기기"><div class="botSImg2"><img src="images/btn_m_cal_right.gif" alt=""/></div></a>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- ###색션끝### -->
+  <!-- ###푸터### -->
+  <footer>
+    <div id="footer">
+      <div id="topF">
+        <div class="topFImg"><img src="images/txt_footer_logo.png" alt=""/></div>
+        <div class="topFLeftText">
+          <ul class="address">
+            <li>서울특별시 송파구 올림픽대로 300 롯데월드몰 8층 롯데문화제단</li>
+            <li>대표 김선광 사업자등록번호 401-82-10731 대표전화 1544-7744</li>
+          </ul>
+          <ul class="lotteData">
+            <li>&copy;2016 LOTTE CONCERT HALL ALL RIGHTS RESERVED.</li>
+          </ul>
+        </div>
+        <div class="topFRightText">
+          <ul>
+            <li><a href="#" title="문화체육관광부" class="showBalloon" >문화체육관광부</a></li>
+            <li><a href="#" title="오시는 길" class="liList showBalloon">오시는 길</a></li>
+            <li><a href="#" title="영상정보처리기기 운영및 관리 방침" class="liList showBalloon">영상정보처리기기 운영&middot;관리 방침</a></li>
+            <li><a href="#" title="개인정보처리방침" class="liList showBalloon" id="pointText">개인정보처리방침</a></li>
+            <li><a href="#" title="이용약관" class="liList showBalloon">이용약관</a></li>
+          </ul>
+        </div>
+        <div class="topFRightImg">
+          <a href="#" class="showBalloon" title="위로가기"><img src="images/btn_top.png" alt="위로가기"/></a>
+        </div>
+        <div class="topFRightClick"></div>
+      </div>
+      <div id="botF">
+        <a href="http://css-validator.kldp.org/check/referer">
+          <img style="border:0;width:80px;height:15px"src="//css-validator.kldp.org/images/validate/css-blue"alt="올바른 CSS입니다!" />
+        </a>
+      </div>
+    </div>
+
+  </footer>
+  <!-- ###푸터끝### -->
+</div>
+</body>
+</html>

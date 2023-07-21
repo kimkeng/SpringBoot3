@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>안녕타임리프</title>
+</head>
+<body>
+    <h1 th:text="${msg}">
+    태그 안에 msg 어트리비트 텍스트 가져오기</h1>
+
+    <h1 th:text="'hello world'">
+    태그 안에 텍스트 넣기</h1>
+
+    <!-- 태그 안에서 글 중간에 이름넣기-->
+    <h1>안녕하세요! [[${name}]] 씨</h1>
+
+    <h1 th:text="'안녕 ' + ${name} + '민이'">
+    중간에 이름 넣기 </h1>
+
+    <h1 th:text="|하이 ${name} 좋은 아침 ${name} ${name}|">
+    || 안에는 +를 뺴도 됌</h1>
+
+    <div th:with="a=1,b=2">
+        <span th:text="|${a} + ${b} = ${a+b} ${name} ${name} |">
+        이거는 || 사이에 쓴거라여기에 나오는 + 와 = 은 문자열로 표기됌</span>
+    </div>
+
+    <!--비교 연산자(boolean)-->
+    <span th:text="1 > 10"></span>
+    <span th:text="1 < 10"></span>
+    <span th:text="1 >= 10"></span>
+    <span th:text="1 <= 10"></span>
+    <span th:text="1 == 10"></span>
+    <span th:text="1 != 10"></span>
+    <span th:text="길 == 길"></span>
+    <span th:text="길 != 길"></span>
+
+    <p th:text="${name} == '길' ? '길!(true)' : '길...?(false)'"></p>
+
+    <!--if문-->
+    <div th:if="${name}=='갱'">
+        <p>갱!(true)</p>
+    </div>
+
+    <!--else랑 비슷한 unless-->
+    <div th:unless="${name} == '영'">
+        <p>영..?(false)</p>
+    </div>
+
+    <!--switch 문-->
+    <div th:switch="${name}">
+        <p th:case="길" th:text="|${name}!!|"></p>
+        <p th:case="영" th:text="|${name}!!|"></p>
+        <p th:case="갱" th:text="|${name}!!|"></p>
+        <p th:case="*">없는데요</p>
+    </div>
+
+    <div th:with="x=1000000, y=123456.789">
+        정수 형식:
+        <span th:text="${#numbers.formatInteger(x,3,'COMMA')}"></span>
+        <!--#이 들어가면 포멧형식-->
+        <br>
+        부동 소수점 형식:
+        <span th:text="${#numbers.formatDecimal(y,3,'COMMA',2,'POINT')}"></span>
+        <!--#이 들어가면 포멧형식-->
+    </div>
+
+    <div th:with="today=${#dates.createNow()}">
+        yyyy/MM/dd 형식: <span th:text="${#dates.format(today,'yyyy/MM/dd')}"></span><br>
+        yyyy년 MM월 dd일 형식: <span th:text="${#dates.format(today,'yyyy년 MM월 dd일')}"></span><br>
+        yyyy년: <span th:text="${#dates.year(today)}"></span><br>
+        MM월: <span th:text="${#dates.month(today)}"></span><br>
+        dd일: <span th:text="${#dates.day(today)}"></span><br>
+        요일: <span th:text="${#dates.dayOfWeek(today)}"></span><br>
+    </div>
+
+    <h1>Fragment를 아래에 삽입하기</h1>
+    <div id="one" th:insert="fragment :: one">얘는 그대로 가져온거</div>
+    <div id="three" th:replace="fragment :: three">재배치되서 감싸고있는 태그가 한겹 사라짐</div>
+
+    <!--<세균맨태그> 세균세균 </세균맨태그>-->
+
+</body>
+</html>

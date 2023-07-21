@@ -1,0 +1,2 @@
+/*헤더 푸터 나눠줄때 필수*/
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
